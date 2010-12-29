@@ -1,0 +1,99 @@
+
+/* Overall structure */
+
+body {
+  margin:0; 
+  padding:0; 
+  height:100%;
+  
+  background: #113 url(/bg_blue.gif) fixed;
+  
+  font-family: Palatino, Georgia, "Times New Roman", Times, serif;
+	font-size: 17px;
+}
+
+#main {
+	width: 900px;
+	margin: 50px auto;
+	padding: 0px 0px 0px 0px;
+	background-color: white;
+}
+
+#content {
+  padding: 60px 0px;
+}
+
+/* Articles */
+
+#content .post {
+  padding: 0px 150px;
+}
+
+#content p {
+  line-height: 1.6em;
+  margin: 0px 0px 1em;
+}
+
+h2 {
+	text-transform: lowercase;
+	text-align: center;
+	font-weight: normal;
+	font-size: 30px;
+	margin: 0px 0px 20px 0px;
+}
+
+h2 a {
+	color: #000;
+	text-decoration: none;
+}
+
+h2 a:hover {
+	text-decoration: underline;
+}
+
+/*VIGNETTE*/
+/* First we set the four elements of our vignette
+ to be on top no matter what and set their initial
+ width and height which we'll overwrite in the next declarations.
+ */
+#vignette-top, #vignette-bottom, #vignette-left, #vignette-right {
+  display: block;
+  height: 100%;
+  position: fixed;
+  z-index: -999;
+  width: 100%; 
+ }
+ 
+#vignette-top, #vignette-bottom {
+  height: 150px; 
+}
+
+#vignette-left, #vignette-right {
+  width: 150px; 
+}
+
+#vignette-top {
+  background-image: -moz-linear-gradient(100% 100% 90deg, rgba(0, 0, 51, 0), rgba(0, 0, 51, 0.4) );
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 51, 0.4)), to(rgba(0, 0, 51, 0)));
+  top: 0;
+}
+
+#vignette-bottom {
+  background-image: -moz-linear-gradient(100% 100% 90deg, rgba(0, 0, 51, 0.4), rgba(0, 0, 51, 0) );
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 51, 0)), to(rgba(0, 0, 51, 0.4)));
+  bottom: 0;
+}
+
+#vignette-left {
+  background-image: -moz-linear-gradient(100% 100% 180deg, rgba(0, 0, 51, 0), rgba(0, 0, 51, 0.4) );
+  background-image: -webkit-gradient(linear, left center, right center, from(rgba(0, 0, 51, 0.4)), to(rgba(0, 0, 51, 0)));
+  left: 0; 
+  top: 0;
+}
+
+#vignette-right {
+  background-image: -moz-linear-gradient(100% 100% 180deg, rgba(0, 0, 51, 0.4), rgba(0, 0, 51, 0) );
+  background-image: -webkit-gradient(linear, right center, left center, from(rgba(0, 0, 51, 0.4)), to(rgba(0, 0, 51, 0)));
+  right: 0; 
+  top:0;
+}
