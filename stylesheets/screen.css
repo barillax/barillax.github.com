@@ -6,27 +6,164 @@ body {
   padding:0; 
   height:100%;
   
-  background: #113 url(/bg_blue.gif) fixed;
+  background: #113 url(/bg_purple.gif);
   
   font-family: Palatino, Georgia, "Times New Roman", Times, serif;
 	font-size: 17px;
 }
 
 #main {
-	width: 900px;
+	width: 930px;
 	margin: 50px auto;
 	padding: 0px 0px 0px 0px;
-	background-color: white;
 }
+
+/* Header */
+
+#header {
+  height: 161px;
+  overflow: hidden;
+  margin-left: 1px;
+  background: url(/folio_top.png) no-repeat center;
+}
+
+#header #topnav {
+  float: right;
+  margin: 10px 80px;
+}
+
+#header .logo {
+  float: left;
+  margin: 0px 80px;
+  font-size: 9px;
+  font-family: Monaco, "Courier New", monospace;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: left;
+  color: #160f60;
+  line-height: 1.25em;
+}
+
+ul.topnav {
+  display: inline;
+}
+ul.topnav li {
+  display: inline;
+  list-style-type: none;
+  margin: 0px 5px 0px 0px;
+  padding: 2px 15px 0px 15px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #c3bceb;
+  text-shadow: -1px -1px 2px #160f60;
+  text-decoration: none;
+}
+ul.topnav a {
+  color: #c3bceb;
+  text-decoration: none;
+}
+ul.topnav a:hover {
+	text-decoration: underline;
+}
+ul.topnav a:active {
+  position: relative;
+  top: 1px;
+}
+
+/* Content */
 
 #content {
-  padding: 60px 0px;
+  padding-bottom: 115px;
+  background: url(/folio_bottom.png) no-repeat bottom center;
 }
 
-/* Articles */
+/* Archive */
 
-#content .post {
-  padding: 0px 150px;
+ul.post_index {
+  list-style-type: none;
+  margin-bottom: 2em;
+}
+ul.post_index li {
+  line-height: 1.75em;
+}
+ul.post_index span {
+  color: #aaa;
+  font-family: Monaco, "Courier New", monospace;
+  font-size: 80%;
+}
+
+/* Posts */
+
+#posts .post {
+  width: 900px;
+  min-height: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px 0px 0px 0px;
+  background: #fff url(/paper_separator.png) repeat-x top;
+}
+#posts > div:first-child {
+  width: 930px;
+  background: url(/paper_top.png) no-repeat top;
+}
+
+#posts .date_posted {
+  background: url(/badge.png) no-repeat top;
+  float: left;
+  margin-left: 45px;
+  width: 80px;
+  height: 86px;
+  text-align: center;
+  padding-top: 10px;
+  color: #ffffcc;
+  font-family: "Gill Sans", "Gill Sans MT", sans-serif;
+}
+#posts > div:first-child > div.date_posted {
+  margin-left: 60px;
+}
+
+#posts span.month {
+  font-size: 17px;
+  font-weight: bold;
+  display: block;
+}
+#posts span.day {
+  font-size: 28px;
+  font-weight: bold;
+  display: block;
+}
+
+#posts .post_title {
+  height: 129px; /* total vertical offset = 129 = height of paper edge */
+	width: 660px;
+	margin: auto;
+}
+
+h2 {
+	text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", sans-serif;
+	font-weight: bold;
+	font-size: 36px;
+	padding-top: 60px;
+}
+h2 a {
+	color: #000;
+	text-decoration: none;
+}
+h2 a:hover {
+	text-decoration: underline;
+}
+
+#content .inner_post {
+  width: 660px;
+  padding-left: 120px;
+  padding-right: 120px;
+  margin: auto;
+  background-color: white;
+  padding-bottom: 10px;
+  border-color: #fff;
 }
 
 #content p {
@@ -34,21 +171,59 @@ body {
   margin: 0px 0px 1em;
 }
 
-h2 {
-	text-transform: lowercase;
-	text-align: center;
-	font-weight: normal;
-	font-size: 30px;
-	margin: 0px 0px 20px 0px;
+
+#content p > a {
+  text-decoration: none;
 }
 
-h2 a {
-	color: #000;
-	text-decoration: none;
+#content p > a:link {
+  text-decoration: none;
+  color: #333;
+  border-color: #888;
+  border-width: 0 0 1px 0;
+  border-style: none none solid none;
+  padding: 3px 0px 2px 0px;
+  background-color: inherit;
+}
+#content p > a:visited {
+  color: #555;
+  border-color: #999;
+  border-width: 0 0 1px 0;
+  border-style: none none dotted none;
+  padding: 3px 0px 2px 0px;
+  background-color: inherit;
+}
+#content p > a:hover {
+  color: black;
+  text-decoration: none;
+  background-color: #ffc;
+}
+#content p > a:active {
+  position: relative;
+  top: 1px;
 }
 
-h2 a:hover {
-	text-decoration: underline;
+#content p.bottom_date {
+  text-align: right;
+  font-weight: bold;
+  color: #777;
+  font-variant:small-caps;
+}
+
+/* Footer */
+
+#footer {
+  width: 100%;
+  background: url(/details-pattern.jpeg);
+}
+
+#footer_separator {
+  width: 100%;
+  background: url(/spikes-bottom.png) repeat-x 0% -3px;
+}
+#footer_content {
+  width: 100%;
+  height: 200px;
 }
 
 /*VIGNETTE*/
@@ -73,27 +248,27 @@ h2 a:hover {
 }
 
 #vignette-top {
-  background-image: -moz-linear-gradient(100% 100% 90deg, rgba(0, 0, 51, 0), rgba(0, 0, 51, 0.4) );
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 51, 0.4)), to(rgba(0, 0, 51, 0)));
+  background-image: -moz-linear-gradient(100% 100% 90deg, rgba(12, 12, 30, 0), rgba(12, 12, 30, 0.4) );
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(12, 12, 30, 0.4)), to(rgba(12, 12, 30, 0)));
   top: 0;
 }
 
 #vignette-bottom {
-  background-image: -moz-linear-gradient(100% 100% 90deg, rgba(0, 0, 51, 0.4), rgba(0, 0, 51, 0) );
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 51, 0)), to(rgba(0, 0, 51, 0.4)));
+  background-image: -moz-linear-gradient(100% 100% 90deg, rgba(12, 12, 30, 0.4), rgba(12, 12, 30, 0) );
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(12, 12, 30, 0)), to(rgba(12, 12, 30, 0.4)));
   bottom: 0;
 }
 
 #vignette-left {
-  background-image: -moz-linear-gradient(100% 100% 180deg, rgba(0, 0, 51, 0), rgba(0, 0, 51, 0.4) );
-  background-image: -webkit-gradient(linear, left center, right center, from(rgba(0, 0, 51, 0.4)), to(rgba(0, 0, 51, 0)));
+  background-image: -moz-linear-gradient(100% 100% 180deg, rgba(12, 12, 30, 0), rgba(12, 12, 30, 0.4) );
+  background-image: -webkit-gradient(linear, left center, right center, from(rgba(12, 12, 30, 0.4)), to(rgba(12, 12, 30, 0)));
   left: 0; 
   top: 0;
 }
 
 #vignette-right {
-  background-image: -moz-linear-gradient(100% 100% 180deg, rgba(0, 0, 51, 0.4), rgba(0, 0, 51, 0) );
-  background-image: -webkit-gradient(linear, right center, left center, from(rgba(0, 0, 51, 0.4)), to(rgba(0, 0, 51, 0)));
+  background-image: -moz-linear-gradient(100% 100% 180deg, rgba(12, 12, 30, 0.4), rgba(12, 12, 30, 0) );
+  background-image: -webkit-gradient(linear, right center, left center, from(rgba(12, 12, 30, 0.4)), to(rgba(12, 12, 30, 0)));
   right: 0; 
   top:0;
 }

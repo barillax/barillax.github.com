@@ -4,18 +4,45 @@
   <head>
     <meta charset="UTF-8" />
     <title>Ori Has a Website - {{ page.title }}</title>
+    
+    <!-- CSS --> 
     <link href="/stylesheets/reset.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="/stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
+    
+    <!-- JAVASCRIPT --> 
+    <script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+  	<script type="text/javascript" charset="utf-8" src="/javascript/jquery.scrollTo-min.js"></script>
+  	<script type="text/javascript" charset="utf-8" src="/javascript/jquery.localscroll-min.js"></script>
+  	<script type="text/javascript" charset="utf-8" src="/javascript/main.js"></script>
   </head>
   <body>
     <div id="main">
+      <!-- Header, includes logo and top nav -->
       <div id="header">
-        Header would go here.
+        <div id="topnav">
+          <ul class="topnav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/archive.html">Archive</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/logo.png"></a><br/>
+          <span>&nbsp;version 2.0</span>
+        </div>
       </div>
+      
+      <!-- Content, includes posts and their bodies -->
       <div id="content">
         {{ content }}
       </div>
-      <div id="footer">
+    </div>
+    
+    <!-- Footer -->
+    <div id="footer">
+      <div id="footer_separator"/>
+      <div id="footer_content">
+        <a name="about"/>
       </div>
     </div>
     
@@ -23,5 +50,7 @@
     <div id="vignette-right"></div> 
   	<div id="vignette-bottom"></div> 
   	<div id="vignette-left"></div>
+  	
+  	<a href="http://github.com/barillax"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a> 
   </body>
 </html>
