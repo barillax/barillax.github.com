@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ori Has a Website - {{ page.title }}</title>
+    <link href="/stylesheets/reset.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="main">
+      <!-- Header, includes logo and top nav -->
+      <div id="header">
+        <div id="topnav">
+          <ul class="topnav">
+            <li>About</li>
+            <li>Archive</li>
+          </ul>
+        </div>
+        <a class="logo" href="/">
+          <img src="/logo.png">
+        </a>
+      </div>
+      
+      <!-- Content, includes posts and their bodies -->
+      <div id="content">
+        <div id="posts">
+          <div class="post">
+            <div class="date_posted">
+              <span class="month">{{ page.date | date: "%b" | upcase }}</span>
+              <span class="day">{{ page.date | date:" %d" }}</span>
+            </div>
+            <div class="post_title">
+              <h2>{{ page.title }}</h2>
+            </div>
+            <div class="inner_post">
+              {{ content }}
+              <p class="bottom_date">
+                {{ page.date | date: "%B %d, %Y" }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="footer">
+        <div id="gutter_container">
+        </div>
+      </div>
+    </div>
+    
+    <div id="vignette-top"></div> 
+    <div id="vignette-right"></div> 
+  	<div id="vignette-bottom"></div> 
+  	<div id="vignette-left"></div>
+  </body>
+</html>
