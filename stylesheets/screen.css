@@ -240,35 +240,35 @@ h2 a:hover {
  }
  
 #vignette-top, #vignette-bottom {
-  height: 150px; 
+  height: 100px; 
 }
 
 #vignette-left, #vignette-right {
-  width: 150px; 
+  width: 100px; 
 }
 
 #vignette-top {
-  background-image: -moz-linear-gradient(100% 100% 90deg, rgba(12, 12, 30, 0), rgba(12, 12, 30, 0.4) );
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(12, 12, 30, 0.4)), to(rgba(12, 12, 30, 0)));
+  background-image: -moz-linear-gradient(100% 100% 90deg, rgba(12, 12, 30, 0), rgba(12, 12, 30, 0.5) );
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(12, 12, 30, 0.5)), to(rgba(12, 12, 30, 0)));
   top: 0;
 }
 
 #vignette-bottom {
-  background-image: -moz-linear-gradient(100% 100% 90deg, rgba(12, 12, 30, 0.4), rgba(12, 12, 30, 0) );
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(12, 12, 30, 0)), to(rgba(12, 12, 30, 0.4)));
+  background-image: -moz-linear-gradient(100% 100% 90deg, rgba(12, 12, 30, 0.5), rgba(12, 12, 30, 0) );
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(12, 12, 30, 0)), to(rgba(12, 12, 30, 0.5)));
   bottom: 0;
 }
 
 #vignette-left {
-  background-image: -moz-linear-gradient(100% 100% 180deg, rgba(12, 12, 30, 0), rgba(12, 12, 30, 0.4) );
-  background-image: -webkit-gradient(linear, left center, right center, from(rgba(12, 12, 30, 0.4)), to(rgba(12, 12, 30, 0)));
+  background-image: -moz-linear-gradient(100% 100% 180deg, rgba(12, 12, 30, 0), rgba(12, 12, 30, 0.5) );
+  background-image: -webkit-gradient(linear, left center, right center, from(rgba(12, 12, 30, 0.5)), to(rgba(12, 12, 30, 0)));
   left: 0; 
   top: 0;
 }
 
 #vignette-right {
-  background-image: -moz-linear-gradient(100% 100% 180deg, rgba(12, 12, 30, 0.4), rgba(12, 12, 30, 0) );
-  background-image: -webkit-gradient(linear, right center, left center, from(rgba(12, 12, 30, 0.4)), to(rgba(12, 12, 30, 0)));
+  background-image: -moz-linear-gradient(100% 100% 180deg, rgba(12, 12, 30, 0.5), rgba(12, 12, 30, 0) );
+  background-image: -webkit-gradient(linear, right center, left center, from(rgba(12, 12, 30, 0.5)), to(rgba(12, 12, 30, 0)));
   right: 0; 
   top:0;
 }
