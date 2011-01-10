@@ -9,13 +9,12 @@ body {
   background: #113 url(/img/bg_purple.gif);
   
   font-family: Palatino, Georgia, "Times New Roman", Times, serif;
-	font-size: 17px;
+  font-size: 17px;
 }
 
 #main {
 	width: 930px;
 	margin: 50px auto;
-	padding: 0px 0px 0px 0px;
 }
 
 /* Header */
@@ -63,7 +62,7 @@ ul.topnav a {
   text-decoration: none;
 }
 ul.topnav a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 ul.topnav a:active {
   position: relative;
@@ -198,10 +197,11 @@ h2 a:hover {
   text-decoration: none;
   background-color: #ffc;
 }
-#content p > a:active {
+a:active {
   position: relative;
   top: 1px;
 }
+
 
 #content p.bottom_date {
   text-align: right;
@@ -221,9 +221,57 @@ h2 a:hover {
   width: 100%;
   background: url(/img/spikes-bottom.png) repeat-x 0% -3px;
 }
+
 #footer_content {
-  width: 100%;
-  height: 200px;
+  width: 900px;
+  height: 250px;
+  margin: 0px auto;
+  font-family: Helvetica, Arial, _sans;
+  font-size: 12px;
+  color: #666666;
+  line-height: 1.25em;
+  text-decoration: none;
+}
+
+#footer_content a:active {
+  position: relative;
+  top: 1px;
+  text-decoration: underline;
+}
+#footer_content a:link {
+  color: #160f60;
+  text-decoration: none;
+}
+#footer_content a:visited {
+  color: #160f60;
+  text-decoration: none;
+}
+#footer_content a:hover {
+  text-decoration: underline;
+}
+
+#footer_col_1,#footer_col_2,#footer_col_3 {
+  float: left;
+  width: 200px;
+  padding: 30px 50px 25px 50px;
+}
+
+#footer_col_1_about {
+  height: 80px;
+}
+#footer_col_2_about,#footer_col_3_about {
+  height: 100px;
+}
+#footer_col_1_contact {
+  width: 80px;
+  margin: 0px auto;
+}
+
+#footer_col_3_icons img {
+  vertical-align: middle;
+}
+#footer_col_1_contact img {
+  vertical-align: middle;
 }
 
 /*VIGNETTE*/
