@@ -6,7 +6,7 @@ body {
   padding:0; 
   height:100%;
   
-  background: #113 url(/bg_purple.gif);
+  background: #113 url(/img/bg_purple.gif);
   
   font-family: Palatino, Georgia, "Times New Roman", Times, serif;
 	font-size: 17px;
@@ -24,7 +24,7 @@ body {
   height: 161px;
   overflow: hidden;
   margin-left: 1px;
-  background: url(/folio_top.png) no-repeat center;
+  background: url(/img/folio_top.png) no-repeat center;
 }
 
 #header #topnav {
@@ -74,7 +74,7 @@ ul.topnav a:active {
 
 #content {
   padding-bottom: 115px;
-  background: url(/folio_bottom.png) no-repeat bottom center;
+  background: url(/img/folio_bottom.png) no-repeat bottom center;
 }
 
 /* Archive */
@@ -102,15 +102,15 @@ ul.post_index span {
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 0px 0px 0px 0px;
-  background: #fff url(/paper_separator.png) repeat-x top;
+  background: #fff url(/img/paper_separator.png) repeat-x top;
 }
 #posts > div:first-child {
   width: 930px;
-  background: url(/paper_top.png) no-repeat top;
+  background: url(/img/paper_top.png) no-repeat top;
 }
 
 #posts .date_posted {
-  background: url(/badge.png) no-repeat top;
+  background: url(/img/badge.png) no-repeat top;
   float: left;
   margin-left: 45px;
   width: 80px;
@@ -214,12 +214,12 @@ h2 a:hover {
 
 #footer {
   width: 100%;
-  background: url(/details-pattern.jpeg);
+  background: url(/img/details-pattern.jpeg);
 }
 
 #footer_separator {
   width: 100%;
-  background: url(/spikes-bottom.png) repeat-x 0% -3px;
+  background: url(/img/spikes-bottom.png) repeat-x 0% -3px;
 }
 #footer_content {
   width: 100%;
