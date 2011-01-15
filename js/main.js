@@ -11,5 +11,5 @@ $(document).ready(function() {
   });
   
   // make all links open in new tab
-  $("a").attr("target","_blank");
+  $('a[href^="http"]').attr("target","_blank");
 })
