@@ -13,13 +13,14 @@ title: Home
     <span class="day">{{ post.date | date:" %d" }}</span>
   </div>
   <div class="post_title">
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
   </div>
   <div class="inner_post">
     {{ post.content }}
     
     <p class="bottom_date">
-      {{ post.date | date: "%B %d, %Y" }}
+      {{ post.date | date: "%B %d, %Y" }}<br/>
+      <strong><a href="{{ post.url }}#disqus_thread">Click for Comments</a></strong>
     </p>
   </div>
 </div>

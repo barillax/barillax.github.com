@@ -15,13 +15,15 @@
               <span class="day">{{ page.date | date:" %d" }}</span>
             </div>
             <div class="post_title">
-              <h2>{{ page.title }}</h2>
+              <h1>{{ page.title }}</h1>
             </div>
             <div class="inner_post">
               {{ content }}
               <p class="bottom_date">
                 {{ page.date | date: "%B %d, %Y" }}
               </p>
+
+              {% include _disqus.html %}
             </div>
           </div>
         </div>
@@ -31,4 +33,4 @@
     
     {% include _footer.html %}
   </body>
-</html>      
+</html>
