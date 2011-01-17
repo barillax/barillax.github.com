@@ -10,7 +10,7 @@ title: Archive
       <span class="day"></span>
     </div>
     <div class="post_title">
-      <h2>{{ page.title }}</h2>
+      <h1>{{ page.title }}</h1>
     </div>
     <div class="inner_post">
       <ul class="post_index">

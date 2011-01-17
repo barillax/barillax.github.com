@@ -61,7 +61,12 @@ To create an image with a rollover, I can use code like:
 <img src="/img/pixelmator_desat.png" data-hover="/img/pixelmator.png" alt="Pixelmator">
 {% endhighlight %}
 
-...which results in: <img src="/img/pixelmator_desat.png" data-hover="/img/pixelmator.png" alt="Pixelmator" style="vertical-align: middle;"> (mouse over me)
+...which results in: 
+
+<div style="text-align: center; margin: 0px 0px 1em;">
+<img src="/img/pixelmator_desat.png" data-hover="/img/pixelmator.png" alt="Pixelmator" style="vertical-align: middle;"> 
+Mouse over me!
+</div>
 
 Static site generation precludes a traditional CGI comments system. Instead, I'm using [Disqus][] to insert discussion threads at page-load time via a snippet of javascript. 
 
@@ -83,13 +88,16 @@ Going along with the "making work for myself" theme, I wanted an excuse to do so
  2. I'm not good at any of those tasks
  3. I actually prefer [goofier styling][wacky].
 
-So, I ended up with the rather baroque theme you see today. Faux-leather and purple patterned wallpaper may not scream "technologist," but at least you won't confuse this site with the more refined ones out there.
+So, I ended up with the rather baroque theme you see today. Faux-leather and purple patterned wallpaper may not scream "technologist," but at least you won't confuse this place with the more refined sites out there.
 
-A note about tooling: I'm a long-time Photoshop user, but in the past year I've found [Pixelmator][] to be a great 80/20 option. Plus, there's a few features I love, like the instant selection visualization, and drag-to-set-tolerance for the magic wand tool. Check it out if you're looking for an intuitive Mac OS image editor that won't make you re-learn all of your PS keyboard shortcuts.
+I'm a long-time Photoshop user, but in the past year I've found [Pixelmator][] to be a great 80/20 option. It's an intuitive Mac OS image editor that won't make you re-learn all of your PS keyboard shortcuts. And it even has a few features over PS, like drag-to-set-tolerance for tools like the magic wand and instant selection visualization.
 
   [day job]: http://www.rosettastone.com
   [pixelmator]: http://www.pixelmator.com
   [wacky]: http://www.branded07.com/
 
-# Summary
+## Summary
 
+Is all of this worth it? I'm hoping that the flexibility afforded by everything being Plain Old HTML will allow for easier addition of unique content down the road; the only question is whether this will outweigh the benefits of the many tools I'd get as part of the Wordpress/Blogger ecosystem. At the very least, it was a fun excuse to learn a new framework and get back to some classic webdev work.
+
+And so ends my first self-indulgent blog post. Stay tuned for more interesting content!
