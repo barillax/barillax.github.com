@@ -11,7 +11,7 @@ layout: nil
  <id>http://orihasawebsite.net/</id>
  <author>
    <name>Ori Ratner</name>
-   <email>ratner_at_google_mail</email>
+   <email>ratner@gmail.com</email>
  </author>
 
  {% for post in site.posts %}
