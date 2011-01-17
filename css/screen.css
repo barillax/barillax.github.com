@@ -202,11 +202,11 @@ ol {
 }
 
 
-#content a {
+.post a {
   text-decoration: none;
 }
 
-#content a:link {
+.post a:link {
   text-decoration: none;
   color: #35356C;
   border-color: #160F60;
@@ -215,7 +215,7 @@ ol {
   padding: 3px 0px 2px 0px;
   background-color: inherit;
 }
-#content a:visited {
+.post a:visited {
   color: #35356C;
   border-color: #160F60;
   border-width: 0 0 1px 0;
@@ -223,7 +223,7 @@ ol {
   padding: 3px 0px 2px 0px;
   background-color: inherit;
 }
-#content a:hover {
+.post a:hover {
   color: black;
   text-decoration: none;
   background-color: #CDC6FB;
@@ -233,12 +233,20 @@ a:active {
   top: 1px;
 }
 
-
 #content p.bottom_date {
   text-align: right;
   font-weight: bold;
   color: #777;
   font-variant:small-caps;
+}
+
+/* Disqus */
+
+#disqus_thread {
+  width: 660px;
+  margin: 0px auto;
+  padding: 20px 120px 20px 120px;
+  background-color: #fff;
 }
 
 /* Footer */
