@@ -7,7 +7,7 @@ After five long years, orihasawebsite is reborn!
 
 For a while now, I've needed a place to keep track of interesting projects and diversions, but working with my old PHP-based site was a bit of a pain. Besides being ugly as sin, it was designed more like a portfolio than a living site that could be updated frequently. Yep, it was time for a blog.
 
-I looked into the usual suspects like [Wordpress][] and [Blogger][], and determined that my meager needs were dwarfed by the capabilities of both products. But, both solutions were so damned *boring*. I realized that if I went with either solution, I could have a new website up that very same day, no coding or design required. 
+I looked into the usual suspects like [Wordpress][] and [Blogger][], and determined that my meager needs were dwarfed by the capabilities of both products. But, both solutions were so damned *boring*. I knew that if I went with either solution, I could have a new website up that very same day, no coding or design required. 
 
 Where's the fun in that?
 
