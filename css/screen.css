@@ -20,10 +20,15 @@ body {
 /* Header */
 
 #header {
+  width: 922px;
   height: 161px;
   overflow: hidden;
-  margin-left: 1px;
-  background: url(/img/folio_top.png) no-repeat center;
+  margin-left: 5px;
+  background: url(/img/folio_top.png) no-repeat center bottom;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
 #header #topnav {
